@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0;  
+  padding: 0;
+  box-sizing: border-box;   
 }
 html {
   scroll-behavior:smooth;
@@ -8,7 +9,6 @@ html {
 body {
   font-family:'Playfair Display', serif;
   color:black; 
-
 }
 a:-webkit-any-link {
   cursor: pointer;
@@ -18,9 +18,8 @@ a:-webkit-any-link {
   position: absolute;
   top: 0; 
   background-repeat: none; 
-  width: 100%;
-  height: 200%;  
-
+  width: 200%;
+  height: 300%; 
 }
 .content {
   position: relative; 
@@ -75,15 +74,19 @@ a {
 }
 a:hover {
   color: blue; 
+  letter-spacing: 2px; 
 }
-.main-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: stretch;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 4em;
+.main-container { 
+  text-align: center; 
+  padding: 10px;
+  align-content: center; 
+
+}
+img.myfamilypic {
+  display: inline-block;
+  align-items: center;
+  height: 500px;  
+  width: auto; 
 }
 h1 {
   text-align: center;
@@ -113,22 +116,21 @@ button {
   font-size: 15px; 
   font-family:'Times New Roman', Times, serif; 
   letter-spacing: 2px;
-
+  margin-bottom: 2em;
 }
 button:hover {
   color: white; 
   background-color:blueviolet;
-  letter-spacing: 2px; 
-  box-shadow: 5px 40px -10px white; 
+  letter-spacing: 5px; 
+  box-shadow: 5px 40px -10px black; 
   cursor: pointer; 
   
 }
 .skills-grid {
-  min-height: 100%; 
   display: grid; 
   grid-template-columns: auto auto auto; 
   box-sizing: border-box; 
-  padding: 10px; 
+  padding: 5px; 
   grid-gap: 2em 4em; 
 }
 p1 {
@@ -141,7 +143,7 @@ p1 {
   flex-direction: row; 
   align-content: space-around; 
   justify-content: space-around;
-  padding: 20px; 
+  padding: 15px; 
 
 }
 .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
@@ -157,6 +159,45 @@ p1 {
   padding: 15px;
   margin: black;  
   
+}
+.form-container {
+  border-radius: 15px; 
+  background-color: slategray; 
+  padding: 20px; 
+  height: 480px; 
+  width: 500px; 
+  display: block; 
+  margin: auto; 
+
+}
+.contact-form {
+  border-radius: 10px;
+  background-color:white; 
+  padding: 20px; 
+  font-family: 'Playfair Display', serif;
+  height: 480px; 
+  width: 500px; 
+ 
+}
+label {
+  cursor:default; 
+}
+input [type=text] {
+  width: 100%; 
+  text-align:justify;
+  padding: 15px; 
+  border-radius: 15px; 
+  box-sizing: border; 
+  margin-top: 4px; 
+  margin-bottom: 15px; 
+  resize: vertical; 
+}
+input[type=submit] {
+  background-color:white:
+  color: white;  
+  padding: 15px; 
+  border: none; 
+  border-radius: 5px; 
 }
 
 .footer-container {
